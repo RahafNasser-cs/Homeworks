@@ -1,5 +1,7 @@
 fun main(){
     //By @RahafNasser-c
+    /*Write a Kotlin program that designs a calculator. The program should read from the user two integer numbers
+     and a character which indicates the type of operation desired. +, -, *, / and %.*/
     println("This program calculates the arithmetic operations")
     println("Enter first number: ")
     var num1= readLine()?.toDouble()
