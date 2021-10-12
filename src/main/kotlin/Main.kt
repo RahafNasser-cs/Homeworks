@@ -1,5 +1,5 @@
 fun main(){
-
+    //By @RahafNasser-c
     println("This program calculates the arithmetic operations")
     println("Enter first number: ")
     var num1= readLine()?.toDouble()
@@ -35,6 +35,10 @@ fun main(){
             result=num1!!%num2!!
             println("The result is ${result}")
         }
+        else->{
+            println("Enter the correct operation (+, -, *, /, %)")
+        }
     }
 
+    println("End of program")
 }
