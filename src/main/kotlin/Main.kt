@@ -7,29 +7,45 @@ fun main(){
     println("This program calc salary raise")
     println("Enter your salary")
     var salary= readLine()?.toDouble()
-    println("Enter your performance (Excellent, Good or Poor)")
+    println("Enter your performance rating (1=excellent, 2=good, and 3=poor)")
     var performance= readLine()
 
     var newSalary:Double?=salary
 
+    if(performance.equals("1")){
+        newSalary=newSalary!!*1.6
+        println("Your new salary ${"%.4f".format(newSalary)}")
+    }else if(performance.equals("2")){
+        newSalary=newSalary!!*1.4
+        println("Your new salary ${"%.4f".format(newSalary)}")
+    }else if(performance.equals("3")){
+        newSalary=newSalary!!*1.15
+        println("Your new salary ${"%.4f".format(newSalary)}")
+    }else{
+        println("Please enter the right performance rating (1=excellent, 2=good, and 3=poor)")
+    }
+
+    //By using when statement
+    /*
     when(performance){
-        "Excellent"->{
+        "1"->{
             newSalary=newSalary!!*1.6
             println("Your new salary ${"%.4f".format(newSalary)}")
         }
-        "Good"->{
+        "2"->{
             newSalary=newSalary!!*1.4
             println("Your new salary ${"%.4f".format(newSalary)}")
         }
-        "Poor"->{
+        "3"->{
             newSalary=newSalary!!*1.15
             println("Your new salary ${"%.4f".format(newSalary)}")
         }
         else->{
-            println("Please enter the right performance (Excellent, Good or Poor)")
+            println("Please enter the right performance rating (1=excellent, 2=good, and 3=poor)")
         }
 
     }
+    */
 
     println("End of program")
 
