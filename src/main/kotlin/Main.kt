@@ -1,3 +1,4 @@
+var student=0
 fun main(){
     //To print in specific formatted
     startProgram()
@@ -6,8 +7,9 @@ fun main(){
     studentInfo("Samar","Nasser",4.66, "Computer Science")
     studentInfo("Norah","Nasser",4.42, "Computer Science")
     studentInfo("Foton","Nasser",4.38, "Computer Science")
+    studentInfo("Foton","Nasser",4.38, "Computer Science")
+    studentInfo("Foton","Nasser",4.38, "Computer Science")
 
+    numberOfStudents()
     endProgram()
-
 }
-
